@@ -7,6 +7,10 @@
 
 <title>Portafolio | Zahira García</title>
 
+<!-- FUENTES E ICONOS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
 <style>
 
 /* CONFIGURACIÓN GENERAL */
@@ -44,7 +48,6 @@ html, body {
     border: none;
 }
 
-
 /* DIAPOSITIVAS CON VIDEO */
 
 .slide-video {
@@ -59,7 +62,6 @@ html, body {
     height: auto;
     display: block;
 }
-
 
 /* CONFIGURACIÓN GENERAL DE LOS VIDEOS */
 
@@ -80,25 +82,17 @@ html, body {
     border: none;
 }
 
-
 /* VIDEO DE LA DIAPOSITIVA 8 */
 
 .slide-08 video {
     top: 33%;
 }
 
-
 /* VIDEO DE LA DIAPOSITIVA 9 */
 
 .slide-09 video {
     top: 40%;
 }
-
-
-/* FUENTE POPPINS */
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
-
 
 /* ENLACE DEBAJO DEL VIDEO 9 */
 
@@ -126,6 +120,56 @@ html, body {
     text-decoration: underline;
 }
 
+/* FOOTER */
+
+.footer {
+    width: 100%;
+    background: #383e63;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding: 45px 20px;
+}
+
+.footer h2 {
+    font-size: 26px;
+    font-weight: 600;
+    margin: 0 0 10px;
+}
+
+.footer p {
+    font-size: 14px;
+    margin: 0 0 25px;
+    color: #e0e3f0;
+}
+
+.footer-redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-bottom: 30px;
+}
+
+.footer-redes a {
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.footer-redes a:hover {
+    color: #aab7ff;
+    transform: translateY(-5px);
+}
+
+.footer-copy {
+    border-top: 1px solid rgba(255,255,255,0.25);
+    padding-top: 20px;
+    font-size: 12px;
+    color: #c9cde0;
+}
 
 /* PARA CELULARES */
 
@@ -146,6 +190,26 @@ html, body {
 
     .enlace-video09 {
         font-size: 11px;
+    }
+
+    .footer {
+        padding: 35px 15px;
+    }
+
+    .footer h2 {
+        font-size: 21px;
+    }
+
+    .footer p {
+        font-size: 12px;
+    }
+
+    .footer-redes {
+        gap: 22px;
+    }
+
+    .footer-redes a {
+        font-size: 22px;
     }
 
 }
@@ -171,7 +235,6 @@ html, body {
     <img src="img/img 6.png" alt="Diapositiva 6">
     <img src="img/img 7.png" alt="Diapositiva 7">
 
-
     <!-- DIAPOSITIVA 8 Y SU VIDEO -->
 
     <section class="slide-video slide-08">
@@ -191,7 +254,6 @@ html, body {
         </video>
 
     </section>
-
 
     <!-- DIAPOSITIVA 9 Y SU VIDEO -->
 
@@ -224,8 +286,7 @@ html, body {
 
     </section>
 
-
-    <!-- DIAPOSITIVAS 10 A 16 -->
+    <!-- DIAPOSITIVAS 10 A 17 -->
 
     <img src="img/img 10.png" alt="Diapositiva 10">
     <img src="img/img 11.png" alt="Diapositiva 11">
@@ -234,8 +295,68 @@ html, body {
     <img src="img/img 14.png" alt="Diapositiva 14">
     <img src="img/img 15.png" alt="Diapositiva 15">
     <img src="img/img 16.png" alt="Diapositiva 16">
+    <img src="img/img 17.png" alt="Diapositiva 17">
 
 </main>
+
+<!-- FOOTER DE CONTACTO -->
+
+<footer class="footer">
+
+    <h2>¡Conectemos!</h2>
+
+    <p>
+        Gracias por visitar mi portafolio.
+        Puedes encontrarme en mis redes sociales.
+    </p>
+
+    <div class="footer-redes">
+
+        <!-- FACEBOOK -->
+        <a
+            href="https://www.facebook.com/profile.php?id=61576055771509&rdid=58lWo673InumlFcG&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F16DfpYPGup%2F#"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Facebook"
+        >
+            <i class="fa-brands fa-facebook"></i>
+        </a>
+
+        <!-- INSTAGRAM -->
+        <a
+            href="PEGA_AQUI_TU_LINK_DE_INSTAGRAM"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram"
+        >
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+
+        <!-- CORREO ELECTRÓNICO -->
+        <a
+            href="zahiragarcia860@gmail.com"
+            aria-label="Correo electrónico"
+        >
+            <i class="fa-solid fa-envelope"></i>
+        </a>
+
+        <!-- TIKTOK -->
+        <a
+            href="https://www.tiktok.com/@trickk_trash?is_from_webapp=1&sender_device=pc"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="TikTok"
+        >
+            <i class="fa-brands fa-tiktok"></i>
+        </a>
+
+    </div>
+
+    <div class="footer-copy">
+        © 2026 Zahira García | Todos los derechos reservados.
+    </div>
+
+</footer>
 
 </body>
 </html>
