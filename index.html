@@ -60,7 +60,8 @@ html, body {
     display: block;
 }
 
-/* AMBOS VIDEOS */
+
+/* CONFIGURACIÓN GENERAL DE LOS VIDEOS */
 
 .slide-video video {
     position: absolute;
@@ -80,14 +81,26 @@ html, body {
 }
 
 
-/* ESPACIO ENTRE DIAPOSITIVA 8 Y 
+/* VIDEO DE LA DIAPOSITIVA 8 */
 
-.slide-08 {
-    margin-bottom: 18px;
+.slide-08 video {
+    top: 43%;
 }
-9 */
 
-/* ENLACE DEBAJO DEL VIDEO 09 */
+
+/* VIDEO DE LA DIAPOSITIVA 9 */
+
+.slide-09 video {
+    top: 50%;
+}
+
+
+/* FUENTE POPPINS */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+
+/* ENLACE DEBAJO DEL VIDEO 9 */
 
 .enlace-video09 {
     position: absolute;
@@ -100,7 +113,7 @@ html, body {
     font-size: 16px;
     font-weight: 600;
 
-    color: #ffffff;
+    color: #5170ff;
     text-decoration: none;
     cursor: pointer;
 
@@ -114,11 +127,6 @@ html, body {
 }
 
 
-/* FUENTE POPPINS */
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
-
-
 /* PARA CELULARES */
 
 @media (max-width: 600px) {
@@ -128,8 +136,12 @@ html, body {
         height: 65%;
     }
 
-    .slide-08 {
-        margin-bottom: 12px;
+    .slide-08 video {
+        top: 43%;
+    }
+
+    .slide-09 video {
+        top: 50%;
     }
 
     .enlace-video09 {
@@ -145,7 +157,11 @@ html, body {
 
 <main class="portafolio">
 
+    <!-- PORTADA -->
+
     <img src="img/Potada.png" alt="Portafolio de Zahira García">
+
+    <!-- DIAPOSITIVAS 1 A 7 -->
 
     <img src="img/img 1.png" alt="Diapositiva 1">
     <img src="img/img 2.png" alt="Diapositiva 2">
@@ -156,7 +172,7 @@ html, body {
     <img src="img/img 7.png" alt="Diapositiva 7">
 
 
-    <!-- DIAPOSITIVA 8 -->
+    <!-- DIAPOSITIVA 8 Y SU VIDEO -->
 
     <section class="slide-video slide-08">
 
@@ -177,7 +193,7 @@ html, body {
     </section>
 
 
-    <!-- DIAPOSITIVA 9 -->
+    <!-- DIAPOSITIVA 9 Y SU VIDEO -->
 
     <section class="slide-video slide-09">
 
@@ -195,7 +211,7 @@ html, body {
             Tu navegador no admite este video.
         </video>
 
-        <!-- ENLACE DEBAJO DEL SEGUNDO VIDEO -->
+        <!-- ENLACE DE YOUTUBE DEBAJO DEL VIDEO 9 -->
 
         <a
             class="enlace-video09"
@@ -209,7 +225,7 @@ html, body {
     </section>
 
 
-    <!-- RESTO DEL PORTAFOLIO -->
+    <!-- DIAPOSITIVAS 10 A 16 -->
 
     <img src="img/img 10.png" alt="Diapositiva 10">
     <img src="img/img 11.png" alt="Diapositiva 11">
