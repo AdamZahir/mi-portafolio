@@ -8,9 +8,6 @@
 <title>Portafolio | Zahira García</title>
 
 <style>
-
-/* CONFIGURACIÓN GENERAL */
-
 * {
     box-sizing: border-box;
 }
@@ -23,7 +20,6 @@ html, body {
 }
 
 /* CONTENEDOR CENTRAL */
-
 .portafolio {
     width: 100%;
     max-width: 1200px;
@@ -44,7 +40,6 @@ html, body {
     border: none;
 }
 
-
 /* DIAPOSITIVAS CON VIDEO */
 
 .slide-video {
@@ -60,96 +55,70 @@ html, body {
     display: block;
 }
 
-
-/* CONFIGURACIÓN GENERAL DE LOS VIDEOS */
-
 .slide-video video {
     position: absolute;
     display: block;
-
-    top: 50%;
-    left: 50%;
-
-    transform: translate(-50%, -50%);
-
-    width: 70%;
-    height: 65%;
-
     object-fit: contain;
-    background: transparent;
+    background: #111;
     border: none;
 }
 
-
 /* VIDEO DE LA DIAPOSITIVA 8 */
 
-.slide-08 video {
-    top: 43%;
+.video-08 {
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
 }
-
 
 /* VIDEO DE LA DIAPOSITIVA 9 */
 
-.slide-09 video {
-    top: 50%;
+.video-09 {
+    top: 24%;
+    left: 5%;
+    width: 90%;
+    height: 70%;
 }
-
 
 /* FUENTE POPPINS */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
+/* ENLACE DEBAJO DEL PRIMER VIDEO */
 
-/* ENLACE DEBAJO DEL VIDEO 9 */
-
-.enlace-video09 {
+.enlace-video08 {
     position: absolute;
-    bottom: 3%;
+    bottom: 2%;
     left: 0;
     width: 100%;
-
     text-align: center;
     font-family: 'Poppins', sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 600;
-
     color: #5170ff;
     text-decoration: none;
     cursor: pointer;
-
     line-height: 1.5;
     transition: opacity 0.3s ease;
 }
 
-.enlace-video09:hover {
+.enlace-video08:hover {
     opacity: 0.7;
     text-decoration: underline;
 }
 
-
-/* PARA CELULARES */
+/* ADAPTACIÓN A CELULARES */
 
 @media (max-width: 600px) {
-
     .slide-video video {
-        width: 78%;
-        height: 65%;
+        object-fit: contain;
     }
 
-    .slide-08 video {
-        top: 43%;
+    .enlace-video08 {
+        font-size: 12px;
     }
-
-    .slide-09 video {
-        top: 50%;
-    }
-
-    .enlace-video09 {
-        font-size: 11px;
-    }
-
 }
-
 </style>
 </head>
 
@@ -158,11 +127,9 @@ html, body {
 <main class="portafolio">
 
     <!-- PORTADA -->
-
     <img src="img/Potada.png" alt="Portafolio de Zahira García">
 
     <!-- DIAPOSITIVAS 1 A 7 -->
-
     <img src="img/img 1.png" alt="Diapositiva 1">
     <img src="img/img 2.png" alt="Diapositiva 2">
     <img src="img/img 3.png" alt="Diapositiva 3">
@@ -172,9 +139,8 @@ html, body {
     <img src="img/img 7.png" alt="Diapositiva 7">
 
 
-    <!-- DIAPOSITIVA 8 Y SU VIDEO -->
-
-    <section class="slide-video slide-08">
+    <!-- DIAPOSITIVA 8 + VIDEO -->
+    <section class="slide-video">
 
         <img
             class="fondo"
@@ -182,40 +148,15 @@ html, body {
             alt="Diapositiva 8"
         >
 
-        <video controls playsinline preload="metadata">
-            <source
-                src="videos/Desinvitada Animacionfinal.mp4"
-                type="video/mp4"
-            >
+        <video class="video-08" controls playsinline preload="metadata">
+            <source src="videos/sketch_Fornite.mp4" type="video/mp4">
             Tu navegador no admite este video.
         </video>
 
-    </section>
-
-
-    <!-- DIAPOSITIVA 9 Y SU VIDEO -->
-
-    <section class="slide-video slide-09">
-
-        <img
-            class="fondo"
-            src="img/img 9.png"
-            alt="Diapositiva 9"
-        >
-
-        <video controls playsinline preload="metadata">
-            <source
-                src="videos/sketch_Fornite.mp4"
-                type="video/mp4"
-            >
-            Tu navegador no admite este video.
-        </video>
-
-        <!-- ENLACE DE YOUTUBE DEBAJO DEL VIDEO 9 -->
-
+        <!-- HIPERVÍNCULO DEL VIDEO -->
         <a
-            class="enlace-video09"
-            href="https://youtu.be/ZQCce7EVrVE?si=qRc_ZUDj50gxI0pW"
+            class="enlace-video08"
+            href="PEGA_AQUI_EL_ENLACE"
             target="_blank"
             rel="noopener noreferrer"
         >
@@ -225,8 +166,24 @@ html, body {
     </section>
 
 
-    <!-- DIAPOSITIVAS 10 A 16 -->
+    <!-- DIAPOSITIVA 9 + VIDEO -->
+    <section class="slide-video">
 
+        <img
+            class="fondo"
+            src="img/img 9.png"
+            alt="Sketch animatic"
+        >
+
+        <video class="video-09" controls playsinline preload="metadata">
+            <source src="videos/Desinvitada Animacionfinal.mp4" type="video/mp4">
+            Tu navegador no admite este video.
+        </video>
+
+    </section>
+
+
+    <!-- DIAPOSITIVAS 10 A 16 -->
     <img src="img/img 10.png" alt="Diapositiva 10">
     <img src="img/img 11.png" alt="Diapositiva 11">
     <img src="img/img 12.png" alt="Diapositiva 12">
