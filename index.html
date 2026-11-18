@@ -68,15 +68,11 @@ html, body {
 .slide-video video {
     position: absolute;
     display: block;
-
     top: 50%;
     left: 50%;
-
     transform: translate(-50%, -50%);
-
     width: 80%;
     height: 74%;
-
     object-fit: contain;
     background: transparent;
     border: none;
@@ -101,16 +97,13 @@ html, body {
     bottom: 8%;
     left: 0;
     width: 100%;
-
     text-align: center;
     font-family: 'Poppins', sans-serif;
     font-size: 30px;
     font-weight: 600;
-
     color: #5170ff;
     text-decoration: none;
     cursor: pointer;
-
     line-height: 1.5;
     transition: opacity 0.3s ease;
 }
@@ -120,7 +113,9 @@ html, body {
     text-decoration: underline;
 }
 
+/* ================================= */
 /* DIAPOSITIVA 18 CON AUDIOS */
+/* ================================= */
 
 .slide-18 {
     width: 100%;
@@ -142,39 +137,69 @@ html, body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
-    width: 70%;
-
+    width: 65%;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 35px;
-
     line-height: 1.5;
 }
 
-/* CADA REPRODUCTOR */
+/* TARJETAS DE AUDIO */
 
 .audio-item {
     width: 100%;
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
+    padding: 18px 22px;
+
+    display: flex;
+    align-items: center;
+    gap: 18px;
+
+    background: rgba(25, 29, 45, 0.78);
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-radius: 18px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    transition: transform 0.3s ease, background 0.3s ease;
 }
 
-.audio-item h3 {
+.audio-item:hover {
+    transform: scale(1.025);
+    background: rgba(35, 42, 65, 0.9);
+}
+
+/* ÍCONOS MUSICALES */
+
+.audio-icon {
+    min-width: 48px;
+    height: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: linear-gradient(135deg, #8b9cff, #c4a7ff);
+    border-radius: 14px;
+
     color: #ffffff;
     font-size: 22px;
-    font-weight: 600;
-    margin: 0 0 12px;
 }
+
+/* REPRODUCTORES */
 
 .audio-item audio {
     display: block;
     width: 100%;
-    height: 45px;
+    height: 42px;
+    min-width: 0;
 }
 
+/* ================================= */
 /* FOOTER */
+/* ================================= */
 
 .footer {
     width: 100%;
@@ -225,9 +250,13 @@ html, body {
     color: #c9cde0;
 }
 
-/* PARA CELULARES */
+/* ================================= */
+/* DISEÑO PARA CELULARES */
+/* ================================= */
 
 @media (max-width: 600px) {
+
+    /* VIDEOS */
 
     .slide-video video {
         width: 82%;
@@ -246,23 +275,31 @@ html, body {
         font-size: 11px;
     }
 
-    /* AUDIOS EN CELULARES */
+    /* AUDIOS */
 
     .audios-18 {
-        width: 75%;
-        gap: 10px;
+        width: 78%;
+        gap: 12px;
     }
 
-    .audio-item h3 {
-        font-size: 10px;
-        margin-bottom: 3px;
+    .audio-item {
+        padding: 7px 9px;
+        gap: 8px;
+        border-radius: 10px;
+    }
+
+    .audio-icon {
+        min-width: 25px;
+        height: 25px;
+        font-size: 12px;
+        border-radius: 7px;
     }
 
     .audio-item audio {
         height: 28px;
     }
 
-    /* FOOTER EN CELULARES */
+    /* FOOTER */
 
     .footer {
         padding: 35px 15px;
@@ -358,7 +395,7 @@ html, body {
 
     </section>
 
-    <!-- DIAPOSITIVAS 10 A 16 -->
+    <!-- DIAPOSITIVAS 10 A 17 -->
 
     <img src="img/img 10.png" alt="Diapositiva 10">
     <img src="img/img 11.png" alt="Diapositiva 11">
@@ -367,7 +404,7 @@ html, body {
     <img src="img/img 14.png" alt="Diapositiva 14">
     <img src="img/img 15.png" alt="Diapositiva 15">
     <img src="img/img 16.png" alt="Diapositiva 16">
-        <img src="img/img 17.png" alt="Diapositiva 16">
+    <img src="img/img 17.png" alt="Diapositiva 17">
 
     <!-- DIAPOSITIVA 18 CON DOS AUDIOS -->
 
@@ -389,12 +426,14 @@ html, body {
 
             <div class="audio-item">
 
-                <h3>TÍTULO DEL PRIMER AUDIO</h3>
+                <div class="audio-icon">
+                    <i class="fa-solid fa-music"></i>
+                </div>
 
                 <audio controls preload="metadata">
                     <source
                         src="audios/RadioCreepy_Cap04.wav"
-                        type="audio/mpeg"
+                        type="audio/wav"
                     >
                     Tu navegador no admite este audio.
                 </audio>
@@ -405,12 +444,14 @@ html, body {
 
             <div class="audio-item">
 
-                <h3>TÍTULO DEL SEGUNDO AUDIO</h3>
+                <div class="audio-icon">
+                    <i class="fa-solid fa-headphones"></i>
+                </div>
 
                 <audio controls preload="metadata">
                     <source
                         src="audios/RadioCreepy_Cap09.wav"
-                        type="audio/mpeg"
+                        type="audio/wav"
                     >
                     Tu navegador no admite este audio.
                 </audio>
