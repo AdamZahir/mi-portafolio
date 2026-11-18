@@ -129,7 +129,7 @@ html, body {
     height: auto;
     display: block;
 }
- 
+
 /* CONTENEDOR DE LOS DOS AUDIOS */
 
 .audios-18 {
@@ -144,9 +144,31 @@ html, body {
     flex-direction: column;
     align-items: center;
 
-    gap: 80px; /* MÁS SEPARACIÓN ENTRE LOS AUDIOS */
+    gap: 220px;
 
     line-height: 1.5;
+}
+
+/* GRUPO DE CADA AUDIO */
+
+.audio-grupo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* TÍTULOS DE LOS AUDIOS */
+
+.audio-titulo {
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+    margin: 0 0 18px;
+    line-height: 1.3;
 }
 
 /* TARJETAS DE AUDIO */
@@ -193,6 +215,7 @@ html, body {
     height: 42px;
     min-width: 0;
 }
+
 /* ================================= */
 /* FOOTER */
 /* ================================= */
@@ -273,10 +296,15 @@ html, body {
 
     /* AUDIOS */
 
-.audios-18 {
-    width: 78%;
-    gap: 25px;
-}
+    .audios-18 {
+        width: 78%;
+        gap: 100px;
+    }
+
+    .audio-titulo {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
 
     .audio-item {
         padding: 7px 9px;
@@ -420,37 +448,53 @@ html, body {
 
             <!-- PRIMER AUDIO -->
 
-            <div class="audio-item">
+            <div class="audio-grupo">
 
-                <div class="audio-icon">
-                    <i class="fa-solid fa-music"></i>
+                <h2 class="audio-titulo">
+                    FRAGMENTO DE CAPITULO 04
+                </h2>
+
+                <div class="audio-item">
+
+                    <div class="audio-icon">
+                        <i class="fa-solid fa-music"></i>
+                    </div>
+
+                    <audio controls preload="metadata">
+                        <source
+                            src="audios/RadioCreepy_Cap04.wav"
+                            type="audio/wav"
+                        >
+                        Tu navegador no admite este audio.
+                    </audio>
+
                 </div>
-
-                <audio controls preload="metadata">
-                    <source
-                        src="audios/RadioCreepy_Cap04.wav"
-                        type="audio/wav"
-                    >
-                    Tu navegador no admite este audio.
-                </audio>
 
             </div>
 
             <!-- SEGUNDO AUDIO -->
 
-            <div class="audio-item">
+            <div class="audio-grupo">
 
-                <div class="audio-icon">
-                    <i class="fa-solid fa-headphones"></i>
+                <h2 class="audio-titulo">
+                    FRAGMENTO DE CAPITULO 09
+                </h2>
+
+                <div class="audio-item">
+
+                    <div class="audio-icon">
+                        <i class="fa-solid fa-headphones"></i>
+                    </div>
+
+                    <audio controls preload="metadata">
+                        <source
+                            src="audios/RadioCreepy_Cap09.wav"
+                            type="audio/wav"
+                        >
+                        Tu navegador no admite este audio.
+                    </audio>
+
                 </div>
-
-                <audio controls preload="metadata">
-                    <source
-                        src="audios/RadioCreepy_Cap09.wav"
-                        type="audio/wav"
-                    >
-                    Tu navegador no admite este audio.
-                </audio>
 
             </div>
 
@@ -463,8 +507,6 @@ html, body {
 <!-- FOOTER DE CONTACTO -->
 
 <footer class="footer">
-
-    <h2>¡Conectemos!</h2>
 
     <p>
         Gracias por visitar mi portafolio.
