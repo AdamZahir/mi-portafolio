@@ -129,7 +129,7 @@ html, body {
     height: auto;
     display: block;
 }
-
+ 
 /* CONTENEDOR DE LOS DOS AUDIOS */
 
 .audios-18 {
@@ -137,11 +137,15 @@ html, body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
     width: 65%;
+
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 35px;
+
+    gap: 80px; /* MÁS SEPARACIÓN ENTRE LOS AUDIOS */
+
     line-height: 1.5;
 }
 
@@ -162,13 +166,6 @@ html, body {
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-
-    transition: transform 0.3s ease, background 0.3s ease;
-}
-
-.audio-item:hover {
-    transform: scale(1.025);
-    background: rgba(35, 42, 65, 0.9);
 }
 
 /* ÍCONOS MUSICALES */
@@ -196,7 +193,6 @@ html, body {
     height: 42px;
     min-width: 0;
 }
-
 /* ================================= */
 /* FOOTER */
 /* ================================= */
@@ -277,10 +273,10 @@ html, body {
 
     /* AUDIOS */
 
-    .audios-18 {
-        width: 78%;
-        gap: 12px;
-    }
+.audios-18 {
+    width: 78%;
+    gap: 25px;
+}
 
     .audio-item {
         padding: 7px 9px;
