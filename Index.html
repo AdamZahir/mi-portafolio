@@ -1,99 +1,154 @@
 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Portafolio | Zahira García</title>
+
 <style>
-  /* CONFIGURACIÓN GENERAL */
-  .mi-portafolio {
-    width: 100%;
-    max-width: 100%;
+* {
+    box-sizing: border-box;
+}
+
+html, body {
     margin: 0;
     padding: 0;
+    width: 100%;
+    background: #eef7ff;
+}
+
+.portafolio {
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 0;
-    background: #eef7ff;
-  }
+    margin: 0;
+    padding: 0;
+}
 
-  /* IMÁGENES */
-  .mi-portafolio img {
+.portafolio img {
     display: block;
     width: 100%;
     height: auto;
-    max-width: 100%;
     margin: 0;
     padding: 0;
-    border: 0;
-  }
+    border: none;
+}
 
-  /* CONTENEDORES DE VIDEO */
-  .mi-portafolio .video-contenedor {
+/* DIAPOSITIVAS CON VIDEO */
+
+.slide-video {
     width: 100%;
-    margin: 0;
-    padding: 0;
-    background: #eef7ff;
-  }
+    position: relative;
+    overflow: hidden;
+    line-height: 0;
+}
 
-  .mi-portafolio video {
-    display: block;
+.slide-video .fondo {
     width: 100%;
     height: auto;
-    aspect-ratio: 16 / 9;
+    display: block;
+}
+
+.slide-video video {
+    position: absolute;
+    display: block;
     object-fit: contain;
     background: #111;
-  }
+    border: none;
+}
 
-  /* DESCRIPCIÓN DEL VIDEO 9 */
-  .mi-portafolio .descripcion {
-    padding: 16px 3%;
-    margin: 0;
-    color: #252525;
-    background: #eef7ff;
-    font-family: Arial, sans-serif;
-    font-size: 14px;
-    line-height: 1.5;
-  }
+/* VIDEO DE LA DIAPOSITIVA 8 */
+
+.video-08 {
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+/* VIDEO DE LA DIAPOSITIVA 9 */
+
+.video-09 {
+    top: 24%;
+    left: 5%;
+    width: 90%;
+    height: 70%;
+}
+
+/* ADAPTACIÓN A CELULARES */
+
+@media (max-width: 600px) {
+    .slide-video video {
+        object-fit: contain;
+    }
+}
 </style>
+</head>
 
-<div class="mi-portafolio">
+<body>
 
-  <!-- PORTADA -->
-  <img src="URL_PORTADA" alt="Portada del portafolio">
+<main class="portafolio">
 
-  <!-- DIAPOSITIVAS 1 A 7 -->
-  <img src="URL_IMAGEN_01" alt="Diapositiva 1">
-  <img src="URL_IMAGEN_02" alt="Diapositiva 2">
-  <img src="URL_IMAGEN_03" alt="Diapositiva 3">
-  <img src="URL_IMAGEN_04" alt="Diapositiva 4">
-  <img src="URL_IMAGEN_05" alt="Diapositiva 5">
-  <img src="URL_IMAGEN_06" alt="Diapositiva 6">
-  <img src="URL_IMAGEN_07" alt="Diapositiva 7">
+    <!-- PORTADA -->
+    <img src="img/Potada.png" alt="Portafolio de Zahira García">
 
-  <!-- DIAPOSITIVA 8: VIDEO 1 -->
-  <div class="video-contenedor">
-    <video controls playsinline preload="metadata">
-      <source src="URL_VIDEO_08.mp4" type="video/mp4">
-      Tu navegador no admite la reproducción de video.
-    </video>
-  </div>
+    <!-- DIAPOSITIVAS 1 A 7 -->
+    <img src="img/img 1.png" alt="Diapositiva 1">
+    <img src="img/img 2.png" alt="Diapositiva 2">
+    <img src="img/img 3.png" alt="Diapositiva 3">
+    <img src="img/img%204.png" alt="Diapositiva 4">
+    <img src="img/img%205.png" alt="Diapositiva 5">
+    <img src="img/img%206.png" alt="Diapositiva 6">
+    <img src="img/img%207.png" alt="Diapositiva 7">
 
-  <!-- DIAPOSITIVA 9: VIDEO 2 -->
-  <div class="video-contenedor">
-    <video controls playsinline preload="metadata">
-      <source src="URL_VIDEO_09.mp4" type="video/mp4">
-      Tu navegador no admite la reproducción de video.
-    </video>
 
-    <p class="descripcion">
-      <strong>Sketch animatic</strong> de una escena dentro
-      de una animación colaborativa - 2025
-    </p>
-  </div>
+    <!-- DIAPOSITIVA 8 + VIDEO -->
+    <section class="slide-video">
 
-  <!-- DIAPOSITIVAS 10 A 16 -->
-  <img src="URL_IMAGEN_10" alt="Diapositiva 10">
-  <img src="URL_IMAGEN_11" alt="Diapositiva 11">
-  <img src="URL_IMAGEN_12" alt="Diapositiva 12">
-  <img src="URL_IMAGEN_13" alt="Diapositiva 13">
-  <img src="URL_IMAGEN_14" alt="Diapositiva 14">
-  <img src="URL_IMAGEN_15" alt="Diapositiva 15">
-  <img src="URL_IMAGEN_16" alt="Diapositiva 16">
+        <img
+            class="fondo"
+            src="img/img%208%20%28Video%29.png"
+            alt="Diapositiva 8"
+        >
 
-</div>
+        <video class="video-08" controls playsinline preload="metadata">
+            <source src="img/video-08.mp4" type="video/mp4">
+            Tu navegador no admite este video.
+        </video>
+
+    </section>
+
+
+    <!-- DIAPOSITIVA 9 + VIDEO -->
+    <section class="slide-video">
+
+        <img
+            class="fondo"
+            src="img/img%209.png"
+            alt="Sketch animatic"
+        >
+
+        <video class="video-09" controls playsinline preload="metadata">
+            <source src="img/video-09.mp4" type="video/mp4">
+            Tu navegador no admite este video.
+        </video>
+
+    </section>
+
+
+    <!-- DIAPOSITIVAS 10 A 16 -->
+    <img src="img/img%2010.png" alt="Diapositiva 10">
+    <img src="img/img%2011.png" alt="Diapositiva 11">
+    <img src="img/img%2012.png" alt="Diapositiva 12">
+    <img src="img/img%2013.png" alt="Diapositiva 13">
+    <img src="img/img%2014.png" alt="Diapositiva 14">
+    <img src="img/img%2015.png" alt="Diapositiva 15">
+    <img src="img/img%2016.png" alt="Diapositiva 16">
+
+</main>
+
+</body>
+</html>
