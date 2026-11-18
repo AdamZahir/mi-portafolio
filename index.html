@@ -120,11 +120,65 @@ html, body {
     text-decoration: underline;
 }
 
+/* DIAPOSITIVA 18 CON AUDIOS */
+
+.slide-18 {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.slide-18 .fondo {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* CONTENEDOR DE LOS DOS AUDIOS */
+
+.audios-18 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 70%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+
+    line-height: 1.5;
+}
+
+/* CADA REPRODUCTOR */
+
+.audio-item {
+    width: 100%;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.audio-item h3 {
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 600;
+    margin: 0 0 12px;
+}
+
+.audio-item audio {
+    display: block;
+    width: 100%;
+    height: 45px;
+}
+
 /* FOOTER */
 
 .footer {
     width: 100%;
-    background: ##252933;
+    background: #252933;
     color: white;
     font-family: 'Poppins', sans-serif;
     text-align: center;
@@ -191,6 +245,24 @@ html, body {
     .enlace-video09 {
         font-size: 11px;
     }
+
+    /* AUDIOS EN CELULARES */
+
+    .audios-18 {
+        width: 75%;
+        gap: 10px;
+    }
+
+    .audio-item h3 {
+        font-size: 10px;
+        margin-bottom: 3px;
+    }
+
+    .audio-item audio {
+        height: 28px;
+    }
+
+    /* FOOTER EN CELULARES */
 
     .footer {
         padding: 35px 15px;
@@ -273,7 +345,7 @@ html, body {
             Tu navegador no admite este video.
         </video>
 
-        <!-- ENLACE DE YOUTUBE DEBAJO DEL VIDEO 9 -->
+        <!-- ENLACE DE YOUTUBE DEBAJO DEL VIDEO -->
 
         <a
             class="enlace-video09"
@@ -286,7 +358,7 @@ html, body {
 
     </section>
 
-    <!-- DIAPOSITIVAS 10 A 17 -->
+    <!-- DIAPOSITIVAS 10 A 16 -->
 
     <img src="img/img 10.png" alt="Diapositiva 10">
     <img src="img/img 11.png" alt="Diapositiva 11">
@@ -294,7 +366,60 @@ html, body {
     <img src="img/img 13.png" alt="Diapositiva 13">
     <img src="img/img 14.png" alt="Diapositiva 14">
     <img src="img/img 15.png" alt="Diapositiva 15">
-    <img src="img/img 16.png" alt="Diapositiva 16"> 
+    <img src="img/img 16.png" alt="Diapositiva 16">
+        <img src="img/img 17.png" alt="Diapositiva 16">
+
+    <!-- DIAPOSITIVA 18 CON DOS AUDIOS -->
+
+    <section class="slide-18">
+
+        <!-- IMAGEN DE FONDO -->
+
+        <img
+            class="fondo"
+            src="img/img 18.png"
+            alt="Diapositiva 18"
+        >
+
+        <!-- REPRODUCTORES DE AUDIO -->
+
+        <div class="audios-18">
+
+            <!-- PRIMER AUDIO -->
+
+            <div class="audio-item">
+
+                <h3>TÍTULO DEL PRIMER AUDIO</h3>
+
+                <audio controls preload="metadata">
+                    <source
+                        src="audios/audio1.mp3"
+                        type="audio/mpeg"
+                    >
+                    Tu navegador no admite este audio.
+                </audio>
+
+            </div>
+
+            <!-- SEGUNDO AUDIO -->
+
+            <div class="audio-item">
+
+                <h3>TÍTULO DEL SEGUNDO AUDIO</h3>
+
+                <audio controls preload="metadata">
+                    <source
+                        src="audios/audio2.mp3"
+                        type="audio/mpeg"
+                    >
+                    Tu navegador no admite este audio.
+                </audio>
+
+            </div>
+
+        </div>
+
+    </section>
 
 </main>
 
@@ -312,6 +437,7 @@ html, body {
     <div class="footer-redes">
 
         <!-- FACEBOOK -->
+
         <a
             href="https://www.facebook.com/profile.php?id=61576055771509&rdid=58lWo673InumlFcG&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F16DfpYPGup%2F#"
             target="_blank"
@@ -322,6 +448,7 @@ html, body {
         </a>
 
         <!-- INSTAGRAM -->
+
         <a
             href="PEGA_AQUI_TU_LINK_DE_INSTAGRAM"
             target="_blank"
@@ -332,14 +459,16 @@ html, body {
         </a>
 
         <!-- CORREO ELECTRÓNICO -->
+
         <a
-            href="zahiragarcia860@gmail.com"
+            href="mailto:zahiragarcia860@gmail.com"
             aria-label="Correo electrónico"
         >
             <i class="fa-solid fa-envelope"></i>
         </a>
 
         <!-- TIKTOK -->
+
         <a
             href="https://www.tiktok.com/@trickk_trash?is_from_webapp=1&sender_device=pc"
             target="_blank"
