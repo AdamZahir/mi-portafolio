@@ -8,6 +8,9 @@
 <title>Portafolio | Zahira García</title>
 
 <style>
+
+/* CONFIGURACIÓN GENERAL */
+
 * {
     box-sizing: border-box;
 }
@@ -19,7 +22,8 @@ html, body {
     background: #252936;
 }
 
-/* CONTENEDOR CENTRAL ---------------------------------- */
+/* CONTENEDOR CENTRAL */
+
 .portafolio {
     width: 100%;
     max-width: 1200px;
@@ -56,51 +60,48 @@ html, body {
     display: block;
 }
 
+/* CONFIGURACIÓN GENERAL DE AMBOS VIDEOS */
+
 .slide-video video {
     position: absolute;
     display: block;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    width: 72%;
+    height: 72%;
+
     object-fit: contain;
-    background: #111;
+    background: transparent;
     border: none;
 }
 
-/* VIDEO DE LA DIAPOSITIVA 8 */
 
-.video-08 {
-    top: 3%;
-    left: 5%;
-    width: 90%;
-    height: 90%;
-}
-
-/* VIDEO DE LA DIAPOSITIVA 9 */
-
-.video-09 {
-   top: 24%;
-    left: 5%;
-    width: 90%;
-    height: 90%;
-}
-
-
-/* FUENTE POPPINS -------------------------------------------------  */
+/* FUENTE POPPINS */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
-/* ENLACE DEBAJO DEL VIDEO ! -------------------------------------------------------*/
+
+/* ENLACE DEBAJO DEL VIDEO 08 */
 
 .enlace-video08 {
     position: absolute;
     bottom: 2%;
     left: 0;
     width: 100%;
+
     text-align: center;
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
     font-weight: 600;
+
     color: #5170ff;
     text-decoration: none;
     cursor: pointer;
+
     line-height: 1.5;
     transition: opacity 0.3s ease;
 }
@@ -110,17 +111,23 @@ html, body {
     text-decoration: underline;
 }
 
-/* PARA  CELULARES --------------------------------------- */
+
+/* PARA CELULARES */
 
 @media (max-width: 600px) {
+
     .slide-video video {
+        width: 78%;
+        height: 72%;
         object-fit: contain;
     }
 
     .enlace-video08 {
         font-size: 12px;
     }
+
 }
+
 </style>
 </head>
 
@@ -139,36 +146,60 @@ html, body {
     <img src="img/img 7.png" alt="Diapositiva 7">
 
 
-    <!-- DIAPOSITIVA 8 Y SU  VIDEO -->
+    <!-- DIAPOSITIVA 8 Y SU VIDEO -->
+
     <section class="slide-video">
 
-        <img class="fondo" src="img/img 8 ( Video ).png" alt="Diapositiva 8"
+        <img
+            class="fondo"
+            src="img/img 8 ( Video ).png"
+            alt="Diapositiva 8"
         >
 
-        <video class="video-08" controls playsinline preload="metadata">
-            <source src="videos/Desinvitada Animacionfinal.mp4" type="video/mp4">
+        <video controls playsinline preload="metadata">
+            <source
+                src="videos/Desinvitada Animacionfinal.mp4"
+                type="video/mp4"
+            >
             Tu navegador no admite este video.
         </video>
+
+        <!-- HIPERVÍNCULO A YOUTUBE -->
+
+        <a
+            class="enlace-video08"
+            href="https://youtu.be/ZQCce7EVrVE?si=qRc_ZUDj50gxI0pW"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            Mira el video completo aquí !!
+        </a>
+
+    </section>
 
 
     <!-- DIAPOSITIVA 9 Y SU VIDEO -->
+
     <section class="slide-video">
 
-        <img class="fondo" src="img/img 9.png" alt="Sketch animatic" >
+        <img
+            class="fondo"
+            src="img/img 9.png"
+            alt="Diapositiva 9"
+        >
 
-        <video class="video-09" controls playsinline preload="metadata">
-            <source src="videos/sketch_Fornite.mp4" type="video/mp4">
+        <video controls playsinline preload="metadata">
+            <source
+                src="videos/sketch_Fornite.mp4"
+                type="video/mp4"
+            >
             Tu navegador no admite este video.
         </video>
+
     </section>
-        
-        <!-- HIPERVÍNCULO A YOUTUBE --------------------------------- -->
-        <a
-            class="enlace-video08" href="https://youtu.be/ZQCce7EVrVE?si=qRc_ZUDj50gxI0pW"
-            target="_blank" rel="noopener noreferrer" >
-            Mira el video completo aquí !!
-        </a>
-    </section>
+
+
+    <!-- RESTO DEL PORTAFOLIO -->
 
     <img src="img/img 10.png" alt="Diapositiva 10">
     <img src="img/img 11.png" alt="Diapositiva 11">
