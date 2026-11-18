@@ -1,0 +1,99 @@
+
+<style>
+  /* CONFIGURACIÓN GENERAL */
+  .mi-portafolio {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    background: #eef7ff;
+  }
+
+  /* IMÁGENES */
+  .mi-portafolio img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+
+  /* CONTENEDORES DE VIDEO */
+  .mi-portafolio .video-contenedor {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: #eef7ff;
+  }
+
+  .mi-portafolio video {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    object-fit: contain;
+    background: #111;
+  }
+
+  /* DESCRIPCIÓN DEL VIDEO 9 */
+  .mi-portafolio .descripcion {
+    padding: 16px 3%;
+    margin: 0;
+    color: #252525;
+    background: #eef7ff;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+</style>
+
+<div class="mi-portafolio">
+
+  <!-- PORTADA -->
+  <img src="URL_PORTADA" alt="Portada del portafolio">
+
+  <!-- DIAPOSITIVAS 1 A 7 -->
+  <img src="URL_IMAGEN_01" alt="Diapositiva 1">
+  <img src="URL_IMAGEN_02" alt="Diapositiva 2">
+  <img src="URL_IMAGEN_03" alt="Diapositiva 3">
+  <img src="URL_IMAGEN_04" alt="Diapositiva 4">
+  <img src="URL_IMAGEN_05" alt="Diapositiva 5">
+  <img src="URL_IMAGEN_06" alt="Diapositiva 6">
+  <img src="URL_IMAGEN_07" alt="Diapositiva 7">
+
+  <!-- DIAPOSITIVA 8: VIDEO 1 -->
+  <div class="video-contenedor">
+    <video controls playsinline preload="metadata">
+      <source src="URL_VIDEO_08.mp4" type="video/mp4">
+      Tu navegador no admite la reproducción de video.
+    </video>
+  </div>
+
+  <!-- DIAPOSITIVA 9: VIDEO 2 -->
+  <div class="video-contenedor">
+    <video controls playsinline preload="metadata">
+      <source src="URL_VIDEO_09.mp4" type="video/mp4">
+      Tu navegador no admite la reproducción de video.
+    </video>
+
+    <p class="descripcion">
+      <strong>Sketch animatic</strong> de una escena dentro
+      de una animación colaborativa - 2025
+    </p>
+  </div>
+
+  <!-- DIAPOSITIVAS 10 A 16 -->
+  <img src="URL_IMAGEN_10" alt="Diapositiva 10">
+  <img src="URL_IMAGEN_11" alt="Diapositiva 11">
+  <img src="URL_IMAGEN_12" alt="Diapositiva 12">
+  <img src="URL_IMAGEN_13" alt="Diapositiva 13">
+  <img src="URL_IMAGEN_14" alt="Diapositiva 14">
+  <img src="URL_IMAGEN_15" alt="Diapositiva 15">
+  <img src="URL_IMAGEN_16" alt="Diapositiva 16">
+
+</div>
